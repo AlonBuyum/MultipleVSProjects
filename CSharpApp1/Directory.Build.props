@@ -1,0 +1,17 @@
+<Project>
+<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)./'))" />
+ <PropertyGroup>
+   <Deterministic>true</Deterministic>
+ </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>1.2.3</Version>
+    <!--Example of setting company name in AssemblyInfo.cs to [assembly: AssemblyCompany("Camtek")]-->
+    <Authors>Camtek</Authors>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!--Example of using latest version of C# -->
+    <LangVersion>latestMajor</LangVersion>
+  </PropertyGroup>
+</Project>
